@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form onsubmit="INventry();return false">
+        <div>
+            <div>
+                <label for="fruit">fruit</label>
+            </div>
+            <input type="text" id="fruit">
+        </div>
+        
+        <button type="submit">Chechk</button>
+
+    </form>
+    <h1 id="result">
+
+    </h1>
+
+
+    <script>
+  function INventry()
+  {
+    let fruit=document.getElementById("fruit").value;
+   
+  
+    
+    switch(fruit)
+    {
+      case "apple":
+        case "aitzaz":
+        document.getElementById("result").innerHTML=(`2 apple remaining  `)
+        break;
+
+         case "mango":
+        document.getElementById("result").innerHTML=(` mango juice availabale  `)
+        break;
+        default:
+            document.getElementById("result").innerHTML=(` no fruit found  `)
+
+    }
+  
+  }
+  
+
+
+    </script>
+ </body>
+ </html>
